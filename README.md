@@ -8,7 +8,6 @@ The provided code serves as a starting point for understanding socket programmin
 1. **TCP-client.c**: This file contains the source code for the TCP client. It establishes a connection with the TCP server, sends data, and receives responses.
 
 2. **TCP-server.c**: This file contains the source code for the TCP server. It listens for incoming connections, receives data from clients, processes requests, and sends back responses.
-
 3. **UDP-client.c**: This file contains the source code for the UDP client. It sends datagrams to the UDP server and receives responses.
 
 4. **UDP-server.c**: This file contains the source code for the UDP server. It listens for incoming datagrams, processes requests, and sends back responses.
@@ -17,30 +16,32 @@ The provided code serves as a starting point for understanding socket programmin
 To compile the programs, use the following commands:
 
 For TCP programs:
- `
-gcc TCP-client.c -o TCP-client
 
-gcc TCP-server.c -o TCP-server
- `
+ `gcc TCP-client.c -o TCP-client`
+ 
+ `gcc TCP-server.c -o TCP-server`
+ 
 For UDP programs:
- `
-gcc UDP-client.c -o UDP-client
 
-gcc UDP-server.c -o UDP-server
- `
+ `gcc UDP-client.c -o UDP-client`
+ 
+ `gcc UDP-server.c -o UDP-server`
+ 
 To run the compiled programs, execute the following commands:
 
 For TCP programs:
- `
-./TCP-server
 
-./TCP-client
- `
+ `./TCP-server`
+ 
+  `./TCP-client`
+ 
 For UDP programs:
+
+`./UDP-server `
+
+`./UDP-client`
  `
-./UDP-server
-./UDP-client
- `
+ 
 Make sure to run the server before the client for proper communication.
 
 Note: Replace gcc with your preferred C compiler if you are not using GCC.
