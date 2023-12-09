@@ -17,23 +17,31 @@ The provided code serves as a starting point for understanding socket programmin
 To compile the programs, use the following commands:
 
 For TCP programs:
+`
 gcc TCP-client.c -o TCP-client
+
 gcc TCP-server.c -o TCP-server
+`
 
 For UDP programs:
+`
 gcc UDP-client.c -o UDP-client
-gcc UDP-server.c -o UDP-server
 
+gcc UDP-server.c -o UDP-server
+`
 To run the compiled programs, execute the following commands:
 
 For TCP programs:
-./TCP-server
-./TCP-client
+ `./TCP-server
+ 
+./TCP-client`
 
 For UDP programs:
+`
 ./UDP-server
-./UDP-client
 
+./UDP-client
+`
 Make sure to run the server before the client for proper communication.
 
 Note: Replace gcc with your preferred C compiler if you are not using GCC.
